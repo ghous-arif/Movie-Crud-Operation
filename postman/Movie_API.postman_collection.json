@@ -22,23 +22,27 @@
   ],
   "item": [
     {
-      "name": "Health",
-      "item": [
-        {
-          "name": "Root / health",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{baseUrl}}/",
-            "description": "Returns plain text: Movie API using in-memory data store"
-          },
-          "response": []
-        }
-      ]
-    },
-    {
       "name": "Auth",
       "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"newuser\",\n  \"password\": \"123456\"\n}"
+            },
+            "url": "{{baseUrl}}/register",
+            "description": "Registers a new user and returns 201 Created on success."
+          },
+          "response": []
+        },
         {
           "name": "Login",
           "event": [
