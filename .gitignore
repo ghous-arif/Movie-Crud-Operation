@@ -1,0 +1,4 @@
+# If anything is re-added at repo root
+node_modules/
+.env
+.env.local

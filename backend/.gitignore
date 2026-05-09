@@ -1,0 +1,7 @@
+node_modules/
+movies.json
+movies.test.json
+users.json
+users.test.json
+.env
+.env.local
